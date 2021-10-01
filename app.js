@@ -46,4 +46,4 @@ app.post("/", function (req, res) {
 //Port
 app.listen(process.env.PORT || 3000, function () {
 	console.log("Server run!");
-});
+})

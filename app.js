@@ -15,6 +15,7 @@ app.get("/", function (req, res) {
 		"https://api.openweathermap.org/data/2.5/weather?q=" +
 		city +
 		"&appid=c2768ef5adf976d26c0fcf8b8c9cb5f8&units=metric";
+  console.log(url)
 	https.get(url, function (request) {
 		request.on("data", function (data) {
 			let info = JSON.parse(data);
@@ -42,6 +43,7 @@ app.post("/", function (req, res) {
 	res.redirect("/");
 });
 
-app.listen(3000, function () {
+//Port
+app.listen(process.env.PORT || 3000, function () {
 	console.log("Server run!");
 });

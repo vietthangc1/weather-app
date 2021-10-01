@@ -1,0 +1,37 @@
+body {
+  text-align: center;
+  font-weight: 600;
+}
+
+section {
+  margin: 50px auto;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 5px;
+  width: 200px;
+}
+
+.info {
+  font-size: 2rem;
+}
+
+.tempt-min{
+  color: red
+}
+
+.tempt-max{
+  color: green;
+}
+
+.tempt{
+  background-color: aqua;
+}
+
+.city-example{
+  text-align: right;
+}
